@@ -1,0 +1,156 @@
+{
+    "premiumbentiques": [
+      { "id": 1, "title": "Kids Favirite", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28862.webp" },
+      { "id": 2, "title": "Ready For Some Fun", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28870.webp" },
+      { "id": 3, "title": "Trendist Fashion", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28863.webp" },
+      { "id": 4, "title": "Good Food For Kids", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28874.webp" },
+      { "id": 5, "title": "The Irresistible Deal | Up To 10Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28871.webp" },
+      { "id": 6, "title": "Suit It Up | Up To 12+Y", "author": "https://www.firstcry.com/boutique/suit-it-up-%7C-up-to-12y/28873?ref2=homepage" },
+      { "id": 8, "title": "Chilling In New Fashion | Up To 12+Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28872.webp" },
+      { "id": 9, "title": "Flaunting In Style | Up To 12+Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28864.webp" },
+      { "id": 10, "title": "Deal You Can't Resist| 4-12Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28869.webp" },
+      { "id": 11, "title": "The Cozy Corner | 2 - 12+Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28855.webp" },
+      { "id": 12, "title": "Show-off-Shoes | Up to 12+Y", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28868.webp" },
+      { "id": 13, "title": "New Launch", "author": "https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/28867.webp" }
+    ],
+    "gloriusshades": [
+      { "id": 14, "title": "some comment", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_05.jpg" },
+      { "id": 15, "title": "some comment", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_06.jpg" },
+      { "id": 16, "title": "some comment", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_07.jpg" },
+      { "id": 17, "title": "some comment", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_08.jpg" }
+
+
+    ],
+    "styleparade": [
+      { "id": 15, "offer":"Upto 70% Off", "title": "Sets>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_18.jpg" },
+      { "id": 15, "offer":"Under rs 499", "title": "Tees>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_19.jpg" },
+      { "id": 15, "offer":"Flat 50% Off", "title": "Winter Wear>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_20.jpg" },
+      { "id": 15, "offer":"Buy 1 Get 1 Free", "title": "Frocks>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_21.jpg" },
+      { "id": 15, "offer":"Upto 60% Off", "title": "Onenies>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_22.jpg" },
+      { "id": 15, "offer":"Under rs 599", "title": "Nighewear>", "author": "https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_SOI_060123_23.jpg" }
+        
+    ],
+    "belovedbrand":[
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_19.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_20.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_21.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_22.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_23.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_1111101032022_24.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_25.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_26.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_35.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_36.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_37.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_38.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/wingsfield_26_09_2022.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring__1111101032022_40.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring__1111101032022_41.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_01032022_42.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_12052022_50.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_new_12052022_49.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_12052022_43.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_12052022_44.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_12052022_46_EARTHY_TOUCH.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring_12052022_47.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_desktop_spring__1111112052022_48.jpg"},
+        {"author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/fashion_new_desktop_spring_12052022_45.jpg"}
+
+    ],
+    "diapers":[
+        {"title":"Baby Diapers", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_03.jpg"},
+        {"title":"Baby Wipes", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_04.jpg"},
+        {"title":"Cloth Diapers & Nappies", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_05.jpg"},
+        {"title":"Diaper Ras Cream", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_06.jpg"},
+        {"title":"Diaper Changing Pads & Mats", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_07.jpg"},
+        {"title":"Diaper Bag", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_08.jpg"},
+        {"title":"Potty Training", "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_09.jpg"}
+    ],
+    "bathSkincare":[
+        {"title":"Soaps Shampoos & Body Wash","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_11.jpg"},
+        {"title":"Lotions, Oils & Powder","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_12.jpg"},
+        {"title":"Baby Creams & Ointments","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_13.jpg"},
+        {"title":"Baby Bathers & Tubs","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_14.jpg"},
+        {"title":"Bathing Assessories","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_15.jpg"},
+        {"title":"Grooming","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_16.jpg"},
+        {"title":"Bath Time","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_essentials_051122_17.jpg"}
+
+    ],
+    "feedingkids":[
+        {"title":"Feeeding Bottles & Teats","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_04.jpg"},
+        {"title":"Breast Feeding","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_05.jpg"},
+        {"title":"Sippers & Cups","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_06.jpg"},
+        {"title":"Kids Food & Nutrition","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_07.jpg"},
+        {"title":"Bibs & Hanky","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_08.jpg"},
+        {"title":"Sterilizers","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_12.jpg"},
+        {"title":"Baby Food & Infant Formula","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_02.jpg"},
+        {"title":"Dishes & Utensils","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_11.jpg"},
+        {"title":"Teethers & Soothers","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_13.jpg"},
+        {"title":"Feeding Accessories","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_14.jpg"},
+        {"title":"Feeding Bottle Clearing","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_15.jpg"},
+        {"title":"Kitchen Appliances","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_feeding_&_kids_food_051122_16.jpg"}
+    ],
+    "games":[
+        {"title":"Education Games","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_02.jpg"},
+        {"title":"Soft Toys","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_03.jpg"},
+        {"title":"Puzzles","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_04.jpg"},
+        {"title":"Playgyms & Playmats","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_05.jpg"},
+        {"title":"Baby Rattles","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_06.jpg"},
+        {"title":"Board Games","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate//soi_desktop_160123_07.jpg"}
+    ],
+    "toys":[
+        {"title":"Strollers & Prams","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_19.jpg"},
+        {"title":"Baby Carriers","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_20.jpg"},
+        {"title":"Baby Carycots","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_21.jpg"},
+        {"title":"Car Seats","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_22.jpg"},
+        {"title":"Baby Walkers","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_23.jpg"},
+        {"title":"Ride-Ons & Scooters","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_24.jpg"},
+        {"title":"Bouncers, Rockers & Swings","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_25.jpg"},
+        {"title":"High Chairs & Booster Seats","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_26.jpg"},
+        {"title":"Tricycles & Bikes","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_27.jpg"},
+        {"title":"Battery Operated Ride Ons","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_28.jpg"},
+        {"title":"Skates & Skateboards","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_29.jpg"},
+        {"title":"Protective Gear","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_30.jpg"}
+    ],
+    "nursery":[
+        {"title":"Baby Furniture","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_32.jpg"},
+        {"title":"Blankets & Swaddles","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_33.jpg"},
+        {"title":"Baby Bedding","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_34.jpg"},
+        {"title":"Mosquito Nets","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_35.jpg"},
+        {"title":"Strong Solution","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_36.jpg"},
+        {"title":"Kids Furniture","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_37.jpg"},
+        {"title":"Kids Room Decors","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_38.jpg"},
+        {"title":"Travel Accessories","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_39.jpg"},
+        {"title":"Wallpapers & Stickers","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_40.jpg"},
+        {"title":"Clocks","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/soi_desktop_feeding_&_kids_food_160123_41.jpg"}
+
+    ],
+    "womensCare":[
+        {"title":"Hair Care","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_09.jpg"},
+        {"title":"Appliances","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_10.jpg"},
+        {"title":"Feminine Hygiene & Care","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_11.jpg"},
+        {"title":"Body Care","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_12.jpg"},
+        {"title":"Health & Well Being","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_13.jpg"},
+        {"title":"Facila Cares","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_08.jpg"},
+        {"title":"Bathing Essentials","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_14.jpg"},
+        {"title":"Kits & Combos","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_15.jpg"},
+        {"title":"Sun Protection","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_16.jpg"},
+        {"title":"Eye & Lip Care","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_17.jpg"},
+        {"title":"Makeup & Cosmetics","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_18.jpg"},
+        {"title":"Hands & Feet Care","author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_health_&_safty_071122_19.jpg"}
+    ],
+    "moms":[
+        {"title":"Nursing & Sleep Wear" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_03.jpg"},
+        {"title":"Dreeses & Skirts" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_04.jpg"},
+        {"title":"Lingerie" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_05.jpg"},
+        {"title":"Ethnic Wear" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_06.jpg"},
+        {"title":"Tops" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_07.jpg"},
+        {"title":"Bottom Wear" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_08.jpg"},
+        {"title":"Maternity Support Accessories" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_10.jpg"},
+        {"title":"Nutrition & Lactation Supplements" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_12.jpg"},
+        {"title":"Breast Care" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_13.jpg"},
+        {"title":"Anti Stretch Marks Solutions " , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_14.jpg"},
+        {"title":"Anti Ageing Solutions" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_15.jpg"},
+        {"title":"Pregnancy & Parenting Books" , "author":"https://cdn.fcglcdn.com/brainbees/images/cattemplate/winter_desktop_moms_&_maternity_051122_16.jpg"}
+    ]
+  }

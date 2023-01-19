@@ -14,12 +14,14 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+   
 } from '@chakra-ui/react';
 import {
     HamburgerIcon,
     CloseIcon,
     ChevronDownIcon,
     ChevronRightIcon,
+    SearchIcon
 } from '@chakra-ui/icons';
 import { IconButton } from '@chakra-ui/react'
 
@@ -62,14 +64,19 @@ export const Navbar = () => {
                             {/* Logo */}
                             <img src='https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png' />
                         </Text>
-{/* chakra icon */}                   <IconButton aria-label='Search database'  /* icon={<SearchIcon />} */  />
+                        {/* chakra icon */}
+                        <IconButton
+                            colorScheme='blue'
+                            aria-label='Search database'
+                            icon={<SearchIcon />}
+                        />
 
 
-                        
+
                     </Flex>
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-                            <TopBox />
-                        </Flex>
+                        <TopBox />
+                    </Flex>
                     {/* <Stack
                         flex={{ base: 1, md: 0 }}
                         justify={'flex-end'}
@@ -118,8 +125,8 @@ export const Navbar = () => {
                     borderStyle={'solid'}
                     borderColor={useColorModeValue('gray.200', 'gray.900')}
                     display={'flex'}
-                    // align={'center'}
-                    >
+                // align={'center'}
+                >
                     <Flex
                         flex={{ base: 1, md: 'auto' }}
                         ml={{ base: -2 }}
@@ -137,7 +144,7 @@ export const Navbar = () => {
 
 
                         <Flex display={{ base: 'none', md: 'flex' }}  >
-                            <BottomBox />
+                            <BottomBox  />
 
 
                         </Flex>
@@ -156,7 +163,7 @@ export const Navbar = () => {
                             <img
                                 height={'100%'}
 
-                             src='https://cdn.fcglcdn.com/brainbees/banners/FC-menu-carters-logo.webp' alt='' 
+                                src='https://cdn.fcglcdn.com/brainbees/banners/FC-menu-carters-logo.webp' alt=''
                             />
 
                         </Text>
@@ -248,46 +255,46 @@ const BottomBox = () => {
     // const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
-        <Stack direction={'row'} 
-        
+        <Stack direction={'row'}
+
         // spacing={4}
         >
             {TOP_NAV_ITEMS.map((navItem) => (
-                <Box key={navItem.label} 
-                _hover={{
-                    textDecoration: 'none',
-                    // color: linkHoverColor,
-                    bg:'white',
-                    alignItems:'center'
-                }}
+                <Box key={navItem.label}
+                // _hover={{
+                //     textDecoration: 'none',
+                //     // color: linkHoverColor,
+                //     bg:'white',
+                //     alignItems:'center'
+                // }}
                 >
-                    
-                    <Popover 
-                    trigger={'hover'}
-                     placement={'right-start'}
+
+                    <Popover
+                        trigger={'hover'}
+                        placement={'bottom-start'}
                     >
-                        <PopoverTrigger> 
+                        <PopoverTrigger>
                             <Link
-                                // p={2}
-                                // href={navItem.href ?? '#'}
-                                // fontSize={'sm'}
-                                // fontWeight={500}
-                                // color={linkColor}
-                               
-                                >
+                            p={2}
+                            // href={navItem.href ?? '#'}
+                            // fontSize={'sm'}
+                            fontWeight={500}
+                            // color={linkColor}
+
+                            >
                                 {navItem.label}
                             </Link>
                         </PopoverTrigger>
 
                         {navItem.children && (
                             <PopoverContent
-                                // border={0}
-                                // boxShadow={'xl'}
-                                // bg={popoverContentBgColor}
-                                // p={4}
-                                // rounded={'xl'}
-                                // minW={'sm'}
-                                >
+                            // border={0}
+                            // boxShadow={'xl'}
+                            // bg={popoverContentBgColor}
+                            // p={4}
+                            // rounded={'xl'}
+                            // minW={'sm'}
+                            >
                                 <Stack>
                                     {navItem.children.map((child) => (
                                         <TopSubNav key={child.label} {...child} />
@@ -311,12 +318,13 @@ const TopSubNav = ({ label, href, subLabel }) => {
             display={'block'}
             p={2}
             rounded={'md'}
-            _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+            _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+        >
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: 'pink.400' }}
+                        // _groupHover={{ color: 'pink.400' }}
                         fontWeight={500}>
                         {label}
                     </Text>
@@ -329,8 +337,9 @@ const TopSubNav = ({ label, href, subLabel }) => {
                     _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
                     justify={'flex-end'}
                     align={'center'}
-                    flex={1}>
-                    <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+                    flex={1}
+                    width={'100px'}>
+                    {/* <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} /> */}
                 </Flex>
             </Stack>
         </Link>
@@ -346,7 +355,7 @@ const BottomSubNav = ({ label, href, subLabel }) => {
             p={2}
             rounded={'md'}
             _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
-            >
+        >
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
