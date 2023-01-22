@@ -32,7 +32,7 @@ const reducer = (state, action) => {
   }
 }
 
-export const SignupCard = () => {
+export const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [state, dispatch] = useReducer(reducer, initialState)
 
