@@ -205,18 +205,15 @@ const BottomBox = () => {
     return (
         <Stack direction={'row'}
             Columns={{ base: 1, sm: 2, md: 2 }}
-        // spacing={4}
         >
-            
-           
+
+
             {TOP_NAV_ITEMS.map((navItem) => (
-                <Link  key={navItem.label} 
-                href={navItem.href ?? 'girlspage'}
+                <Link key={navItem.label}
+                    href={navItem.href ?? 'girlspage'}
                     _hover={{
                         textDecoration: 'none',
-                        // color: linkHoverColor,
-                        // bg:'red',
-                        // height:"100%",
+
                         alignItems: 'center',
                     }}
                 >
@@ -240,7 +237,7 @@ const BottomBox = () => {
                             </Link>
                         </PopoverTrigger>
 
-                        
+
                     </Popover>
                 </Link>
             ))}
@@ -321,291 +318,59 @@ const BottomSubNav = ({ label, href, subLabel }) => {
 }
 
 
-//  navbar products options
-// ({navItem.children && (
-//     <PopoverContent
-//         border={0}
-//         boxShadow={'xl'}
-//         bg={popoverContentBgColor}
-//         p={4}
-//         rounded={'6xl'}
-//         width={'auto'}
-//         minW={'sm'}
-//         Columns={'base:1,sm:2,md:2'}
-//     >
-//         {/* align={'flex-start'} */}
-//         <Box >
-//             <HStack>
-//                 {navItem.children.map((child) => (
-//                     <TopSubNav key={child.label} {...child} />
-//                     // <Divider />
-//                 ))}
-//             </HStack>
-//         </Box>
-//     </PopoverContent>
-// )})
-
-
-
-
-const Page_links=[
-    {path:'/' ,title:'ALL CATEGORIES'},
-    {path:'/boysfashion' ,title:'BOYS FASHION'},
-    {path:'/girlsfashion' ,title:'GIRL FASHION'}
-
-
-
-]
-
 
 const TOP_NAV_ITEMS = [
     {
         label: 'ALL CATEGORIES',
-        href:'/',
-        children: [
-            {
-                label: 'BOY FASHION',
-                subLabel: 'Trending Design to inspire you.',
-                href: '#',
-            },
-            {
-                label: 'GIRL FASHION',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-            {
-                label: 'FOOTWEAR',
-            },
-            {
-                label: 'TOYS',
-            },
-            {
-                label: 'DIAPERING',
-            },
-            {
-                label: 'GEAR',
-            },
-            {
-                label: 'NURSERY',
-            },
-            {
-                label: 'MOMS',
-            },
-            {
-                label: 'HEALTH & SAFETY',
-            },
-            {
-                label: 'BOUTIQUES',
-            },
-            {
-                label: "WOMEN'S BEAUTY & CARE",
-            },
-            {
-                label: 'BIRTHDAYS & GIFTS',
-            },
-            {
-                label: "BOOKS & CD'S",
-            },
-            {
-                label: 'SCHOOL SUPPLIES',
-            },
-            {
-                label: 'OFFERS',
-            },
-            {
-                label: 'STORES & PRESCHOOLS',
-            },
-            {
-                label: 'PRESHOOL ADMISSIONS',
-            },
-        ],
+        href: '/',
     },
     {
         label: 'BOYS FASHION',
-        href:'/boysfashion',
-
-
-        children: [
-            {
-                label: 'Job Board',
-                subLabel: 'Find your dream design job',
-                href: '#',
-            },
-            {
-                label: 'Freelance Projects',
-                subLabel: 'An exclusive list for contract work',
-                href: '#',
-            },
-        ],
+        href: '/boysfashion',
     },
     {
         label: 'GIRL FASHION',
-        href:'/girlsfashion',
-
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '/girlsfashion',
     },
     {
         label: 'FOOTWEAR',
-        href:'/footwear',
-
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '/footwear',
     },
     {
         label: 'TOYS',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'DIAPERING',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'GEAR',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'FEEDING',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'BATH',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'NURSERY',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'MOMS',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'HEALTH',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
     {
         label: 'BOUTIQUES',
-        children: [
-            {
-                label: 'Explore Design Work',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'New & Noteworthy',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        href: '#',
     },
 ];
 

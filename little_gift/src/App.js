@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import { Navbar } from './Components/Navbar';
 import { Product } from './Pages/Product';
-import {SignupCard} from './Pages/Signup';
-import {Login} from './Pages/Login';
+import {Login} from './Pages/Login'
+import {Signup} from './Pages/Signup'
 import {BoyFashion} from './Pages/BoyFashion'
 import {GirlFashion} from './Pages/GirlFashion'
-import {Sidebar} from './Components/Sidebar';
 
 function App() {
   return (
     <div className="App">
       <Product />
-      {/* <SignupCard /> */}
-      {/* <Login /> */}
-      {/* <GirlFashion /> */}
-      {/* <BoyFashion /> */}
-      {/* <Sidebar /> */}
+      <Signup />
+      <Login />
+      <BoyFashion />
+      <GirlFashion />
     </div>
   );
 }
