@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/button": "^2.0.16",
-    "@chakra-ui/icons": "^2.0.16",
+    "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.4.9",
     "@chakra-ui/slider": "^2.0.20",
     "@emotion/react": "^11.10.5",
@@ -20,6 +20,7 @@
     "react-app-store-badge": "^1.0.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "search-icon": "^0.0.0",

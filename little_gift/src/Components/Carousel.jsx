@@ -21,7 +21,7 @@ const settings = {
 export const Carousel=()=> {
   // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState<Slider | null>(null);
+  const [slider, setSlider] = React.useState(null);
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
@@ -30,19 +30,27 @@ export const Carousel=()=> {
 
   // These are the images used in the slide
   const cards = [
-    'https://images.unsplash.com/photo-1612852098516-55d01c75769a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-    'https://images.unsplash.com/photo-1627875764093-315831ac12f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-    'https://images.unsplash.com/photo-1571432248690-7fd6980a1ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-  ];
+    "https://cdn.fcglcdn.com/brainbees/banners/hp_dp_hgr_f40_dec_-994x3991670566809068.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p04_iconic_sale_flat60_desktop1674196998558.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/baby_hug_segment_desktop-banner-all_milk_range-994-x-399px1674206863192.gif",
+    "https://cdn.fcglcdn.com/brainbees/banners/mktng_hp_soi_21stjan1674219030308.gif",
+    "https://cdn.fcglcdn.com/brainbees/banners/click_it_to_win_it_jan23_hp_desktop1674195550844.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/mktng_hp_gbbs_21stjan1674217887664.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/merchf_hp_default_soi23_buy2_1701231673929959347.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/merchan_hp_p10_ashwini_dsktp_feedingacc_21.1.20231674196460081.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/slurrpfarm_hp_mkt_po3_all_2_slur401672214030878.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p01_superhit_fashion_brands_soi_desktop1674196374099.webp",
+    "https://cdn.fcglcdn.com/brainbees/banners/mktng_hp_diaper_11thjan1674046582770.webp",
+]
 
   return (
     <Box
       position={'relative'}
-      height={'600px'}
+      height={'420px'}
       width={'full'}
       overflow={'hidden'}>
+        
       {/* CSS files for react-slick */}
-    <>Caraosal</>
 
       <link
         rel="stylesheet"
@@ -58,7 +66,7 @@ export const Carousel=()=> {
       {/* Left Icon */}
       <IconButton
         aria-label="left-arrow"
-        colorScheme="messenger"
+        // colorScheme="messenger"
         borderRadius="full"
         position="absolute"
         left={side}
@@ -71,7 +79,7 @@ export const Carousel=()=> {
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-        colorScheme="messenger"
+        // colorScheme="messenger"
         borderRadius="full"
         position="absolute"
         right={side}
@@ -86,11 +94,11 @@ export const Carousel=()=> {
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={'sm'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            // backgroundSize="cover"
             backgroundImage={`url(${url})`}
           />
         ))}

@@ -2,28 +2,31 @@ import {
     Box,
     Flex,
     Text,
-    // IconButton,
     Button,
     Stack,
+    HStack,
+    VStack,
     Collapse,
     Icon,
-    Link,
+    // Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
-   
+    Divider,
+
 } from '@chakra-ui/react';
 import {
-    HamburgerIcon,
-    CloseIcon,
-    ChevronDownIcon,
     ChevronRightIcon,
     SearchIcon
 } from '@chakra-ui/icons';
 import { IconButton } from '@chakra-ui/react'
+
+// import { AllRoutes } from '../AllRoutes/AllRoutes';
+import { Link } from 'react-router-dom';
+
 
 <i class="fa-duotone fa-camera-retro" style="color: #1c7ed6;"></i>
 
@@ -47,10 +50,6 @@ export const Navbar = () => {
                         ml={{ base: -2 }}
                         display={{ base: 'flex', md: 'none' }}>
                         <IconButton
-                            // onClick={onToggle}
-                            // icon={
-                            //     isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-                            // }
                             variant={'ghost'}
                             aria-label={'Toggle Navigation'}
                         />
@@ -65,49 +64,23 @@ export const Navbar = () => {
                             <img src='https://cdn.fcglcdn.com/brainbees/images/n/fc_logo.png' />
                         </Text>
                         {/* chakra icon */}
-                        <IconButton
-                            colorScheme='blue'
-                            aria-label='Search database'
-                            icon={<SearchIcon />}
-                        />
-
-
-
+                        <Box border={'1px solid grey'} borderRadius={'8px'} marginLeft={'150px'} padding={'0px 0px 0px 10px'} >
+                            <input type={'search'} placeholder={'Search for a Category, Brand or Product'} _hover={'none'} border={'none'}>
+                            </input>
+                            <IconButton
+                                color='red'
+                                backgroundColor={'white'}
+                                aria-label='Search database'
+                                icon={<SearchIcon />}
+                            />
+                        </Box>
                     </Flex>
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <TopBox />
                     </Flex>
-                    {/* <Stack
-                        flex={{ base: 1, md: 0 }}
-                        justify={'flex-end'}
-                        direction={'row'}
-                        spacing={6}>
-                        <Button
-                            as={'a'}
-                            fontSize={'sm'}
-                            fontWeight={400}
-                            variant={'link'}
-                            href={'#'}>
-                            Sign In
-                        </Button>
-                        <Button
-                            display={{ base: 'none', md: 'inline-flex' }}
-                            fontSize={'sm'}
-                            fontWeight={600}
-                            color={'white'}
-                            bg={'pink.400'}
-                            href={'#'}
-                            _hover={{
-                                bg: 'pink.300',
-                            }}>
-                            Sign Up
-                        </Button>
-                    </Stack> */}
                 </Flex>
 
-                {/* <Collapse in={isOpen} animateOpacity>
-                    <MobileNav />
-                </Collapse> */}
+
             </Box>
 
             {/* <h1>Bottom Box</h1> */}
@@ -132,10 +105,7 @@ export const Navbar = () => {
                         ml={{ base: -2 }}
                         display={{ base: 'flex', md: 'none' }}>
                         <IconButton
-                            // onClick={onToggle}
-                            // icon={
-                            //     isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-                            // }
+
                             variant={'ghost'}
                             aria-label={'Toggle Navigation'}
                         />
@@ -144,7 +114,7 @@ export const Navbar = () => {
 
 
                         <Flex display={{ base: 'none', md: 'flex' }}  >
-                            <BottomBox  />
+                            <BottomBox />
 
 
                         </Flex>
@@ -159,7 +129,10 @@ export const Navbar = () => {
                             marginLeft={'25px'}
                         >
                             {/*  */}
-                            <img src="https://cdn.fcglcdn.com/brainbees/images/n/club_logo.png" alt="" />
+                            <Box display={"flex"} alignItems={'center'}>
+                                <img src="https://cdn.fcglcdn.com/brainbees/images/n/club_logo.png" alt="" />
+
+                            </Box>
                             <img
                                 height={'100%'}
 
@@ -169,32 +142,7 @@ export const Navbar = () => {
                         </Text>
 
                     </Flex>
-
-
-
-                    {/* <Stack
-                        flex={{ base: 1, md: 0 }}
-                        justify={'flex-end'}
-                        direction={'row'}
-                        spacing={6}>
-                        <Button
-                            display={{ base: 'none', md: 'inline-flex' }}
-                            fontSize={'sm'}
-                            fontWeight={600}
-                            color={'white'}
-                            bg={'pink.400'}
-                            href={'#'}
-                            _hover={{
-                                bg: 'pink.300',
-                            }}>
-                            Carter's
-                        </Button>
-                    </Stack> */}
                 </Flex>
-
-                {/* <Collapse in={isOpen} animateOpacity>
-                    <MobileNav />
-                </Collapse> */}
             </Box>
         </div>
     )
@@ -252,33 +200,39 @@ const TopBox = () => {
 const BottomBox = () => {
     // const linkColor = useColorModeValue('gray.600', 'gray.200');
     // const linkHoverColor = useColorModeValue('gray.800', 'white');
-    // const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
         <Stack direction={'row'}
-
+            Columns={{ base: 1, sm: 2, md: 2 }}
         // spacing={4}
         >
+            
+           
             {TOP_NAV_ITEMS.map((navItem) => (
-                <Box key={navItem.label}
-                // _hover={{
-                //     textDecoration: 'none',
-                //     // color: linkHoverColor,
-                //     bg:'white',
-                //     alignItems:'center'
-                // }}
+                <Link  key={navItem.label} 
+                href={navItem.href ?? 'girlspage'}
+                    _hover={{
+                        textDecoration: 'none',
+                        // color: linkHoverColor,
+                        // bg:'red',
+                        // height:"100%",
+                        alignItems: 'center',
+                    }}
                 >
 
                     <Popover
                         trigger={'hover'}
-                        placement={'bottom-start'}
+                        placement={'bottom-end'}
+                        width={'100%'}
+                        border={'1px solid red'}
                     >
                         <PopoverTrigger>
                             <Link
-                            p={2}
-                            // href={navItem.href ?? '#'}
-                            // fontSize={'sm'}
-                            fontWeight={500}
+                                p={2}
+                                href={navItem.href ?? '#'}
+                                fontSize={'sm'}
+                                fontWeight={500}
                             // color={linkColor}
 
                             >
@@ -286,24 +240,9 @@ const BottomBox = () => {
                             </Link>
                         </PopoverTrigger>
 
-                        {navItem.children && (
-                            <PopoverContent
-                            // border={0}
-                            // boxShadow={'xl'}
-                            // bg={popoverContentBgColor}
-                            // p={4}
-                            // rounded={'xl'}
-                            // minW={'sm'}
-                            >
-                                <Stack>
-                                    {navItem.children.map((child) => (
-                                        <TopSubNav key={child.label} {...child} />
-                                    ))}
-                                </Stack>
-                            </PopoverContent>
-                        )}
+                        
                     </Popover>
-                </Box>
+                </Link>
             ))}
         </Stack>
     );
@@ -382,25 +321,57 @@ const BottomSubNav = ({ label, href, subLabel }) => {
 }
 
 
+//  navbar products options
+// ({navItem.children && (
+//     <PopoverContent
+//         border={0}
+//         boxShadow={'xl'}
+//         bg={popoverContentBgColor}
+//         p={4}
+//         rounded={'6xl'}
+//         width={'auto'}
+//         minW={'sm'}
+//         Columns={'base:1,sm:2,md:2'}
+//     >
+//         {/* align={'flex-start'} */}
+//         <Box >
+//             <HStack>
+//                 {navItem.children.map((child) => (
+//                     <TopSubNav key={child.label} {...child} />
+//                     // <Divider />
+//                 ))}
+//             </HStack>
+//         </Box>
+//     </PopoverContent>
+// )})
 
 
 
 
+const Page_links=[
+    {path:'/' ,title:'ALL CATEGORIES'},
+    {path:'/boysfashion' ,title:'BOYS FASHION'},
+    {path:'/girlsfashion' ,title:'GIRL FASHION'}
+
+
+
+]
 
 
 const TOP_NAV_ITEMS = [
     {
         label: 'ALL CATEGORIES',
+        href:'/',
         children: [
             {
                 label: 'BOY FASHION',
-                subLabel: 'Trending Design to inspire you "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"',
-                // href: '#',
+                subLabel: 'Trending Design to inspire you.',
+                href: '#',
             },
             {
                 label: 'GIRL FASHION',
-                // subLabel: 'Up-and-coming Designers',
-                // href: '#',
+                subLabel: 'Up-and-coming Designers',
+                href: '#',
             },
             {
                 label: 'FOOTWEAR',
@@ -451,6 +422,9 @@ const TOP_NAV_ITEMS = [
     },
     {
         label: 'BOYS FASHION',
+        href:'/boysfashion',
+
+
         children: [
             {
                 label: 'Job Board',
@@ -466,6 +440,8 @@ const TOP_NAV_ITEMS = [
     },
     {
         label: 'GIRL FASHION',
+        href:'/girlsfashion',
+
         children: [
             {
                 label: 'Explore Design Work',
@@ -481,6 +457,8 @@ const TOP_NAV_ITEMS = [
     },
     {
         label: 'FOOTWEAR',
+        href:'/footwear',
+
         children: [
             {
                 label: 'Explore Design Work',
