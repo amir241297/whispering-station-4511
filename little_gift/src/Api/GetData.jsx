@@ -38,3 +38,10 @@ export const WomensCare=()=>{
 export const Moms=()=>{
     return axios.get(`http://localhost:3001/moms`)
 }
+
+export const boyfashion=()=>{
+    return axios.get(`http://localhost:3001/boyfashion`)
+}
+export const girlfashion=()=>{
+    return axios.get(`http://localhost:3001/girlfashion`)
+}

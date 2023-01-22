@@ -4,6 +4,8 @@ import { FetchData, GloriousData, BelovedBrand, Diapers, BathSkinCare, FeedingKi
 // import { Slider } from '../Components/Slider'
 import { Navbar } from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Carousel } from '../Components/Carousel';
+
 
 
 export const Product = () => {
@@ -103,22 +105,24 @@ export const Product = () => {
     // console.log('state',state)
     return (
         <Box width={'100%'} margin={'auto'} height={'auto'}>
-      <Navbar />
+            <Navbar />
 
 
             {/* Slider */}
-            <Box margin={'auto'}>
-                {/* <Slider /> */}
-            </Box>
+            {/* <Box > */}
+            {/* <Slider /> */}
+            <Carousel />
+
+            {/* </Box> */}
 
 
             {/* Products */}
             <Box
-                    padding={'30px 0px 100px 0px'}
+                padding={'30px 0px 100px 0px'}
 
                 bg={'rgb(238,238,238)'}
             >
-                    <Heading fontSize={'22px'} color={'rgb(75,65,57)'} marginBottom={'30px'}>PREMIUM BOUTIQUES</Heading>
+                <Heading fontSize={'22px'} color={'rgb(75,65,57)'} marginBottom={'30px'}>PREMIUM BOUTIQUES</Heading>
 
                 <Box
                     // border={'3px solid pink'}
