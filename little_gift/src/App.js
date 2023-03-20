@@ -1,18 +1,12 @@
 import './App.css';
-import { Product } from './Pages/Product';
-import {Login} from './Pages/Login'
-import {Signup} from './Pages/Signup'
-import {BoyFashion} from './Pages/BoyFashion'
-import {GirlFashion} from './Pages/GirlFashion'
+import { AllRoutes } from './AllRoutes/AllRoutes';
+import { Navbar } from './Components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Product />
-      <Signup />
-      <Login />
-      <BoyFashion />
-      <GirlFashion />
+      <AllRoutes />
+      {/* <Navbar /> */}
     </div>
   );
 }

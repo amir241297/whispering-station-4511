@@ -112,9 +112,9 @@ export const Signup = () => {
                 Sign up
               </Button>
             </Stack>
-            <Stack pt={6}>
+            <Stack pt={6}> 
               <Text align={'center'}>
-                Already a user? <Link to='/Login' color={'blue.400'}>Login</Link>
+                Already a user? <Link to='/login' color={'blue.400'}>Login</Link>
               </Text>
             </Stack>
           </Stack>

@@ -8,7 +8,7 @@ import {
     VStack,
     Collapse,
     Icon,
-    // Link,
+    Link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -25,7 +25,7 @@ import {
 import { IconButton } from '@chakra-ui/react'
 
 // import { AllRoutes } from '../AllRoutes/AllRoutes';
-import { Link } from 'react-router-dom';
+import { Link as NavLink } from 'react-router-dom';
 
 
 <i class="fa-duotone fa-camera-retro" style="color: #1c7ed6;"></i>
@@ -149,8 +149,8 @@ export const Navbar = () => {
 }
 
 const TopBox = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('black', 'white');
+    // const linkColor = useColorModeValue('gray.600', 'gray.200');
+    // const linkHoverColor = useColorModeValue('black', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
     return (
@@ -159,18 +159,20 @@ const TopBox = () => {
                 <Box key={navItem.label}>
                     <Popover trigger={'hover'} placement={'bottom-start'}>
                         <PopoverTrigger>
-                            <Link
+                            <NavLink
+                            to={navItem.href}
                                 // p={2}
-                                href={navItem.href ?? '#'}
-                                fontSize={'sm'}
-                                fontWeight={400}
-                                color={'rgb(144,140,137)'}
-                                _hover={{
-                                    // textDecoration: 'none',
-                                    color: linkHoverColor,
-                                }}>
+                                // href={navItem.href ?? '#'}
+                                // fontSize={'sm'}
+                                // fontWeight={400}
+                                // color={'rgb(144,140,137)'}
+                                // _hover={{
+                                //     // textDecoration: 'none',
+                                //     color: linkHoverColor,
+                                // }}
+                                >
                                 {navItem.label}
-                            </Link>
+                            </NavLink>
                         </PopoverTrigger>
 
                         {navItem.children && (
@@ -182,9 +184,9 @@ const TopBox = () => {
                                 rounded={'xl'}
                                 minW={'sm'}>
                                 <Stack>
-                                    {navItem.children.map((child) => (
+                                    {/* {navItem.children.map((child) => (
                                         <TopSubNav key={child.label} {...child} />
-                                    ))}
+                                    ))} */}
                                 </Stack>
                             </PopoverContent>
                         )}
@@ -204,173 +206,150 @@ const BottomBox = () => {
 
     return (
         <Stack direction={'row'}
-            Columns={{ base: 1, sm: 2, md: 2 }}
+            Columns={{ base: 1, sm: 6, md: 2 }}
+            spacing={5}
+            fontWeight={'bold'}
         >
 
 
-            {TOP_NAV_ITEMS.map((navItem) => (
-                <Link key={navItem.label}
-                    href={navItem.href ?? 'girlspage'}
-                    _hover={{
-                        textDecoration: 'none',
+                {TOP_NAV_ITEMS.map((ele) => (
+                    <NavLink key={ele.label} to={ele.path} >{ele.label}</NavLink>
 
-                        alignItems: 'center',
-                    }}
-                >
-
-                    <Popover
-                        trigger={'hover'}
-                        placement={'bottom-end'}
-                        width={'100%'}
-                        border={'1px solid red'}
-                    >
-                        <PopoverTrigger>
-                            <Link
-                                p={2}
-                                href={navItem.href ?? '#'}
-                                fontSize={'sm'}
-                                fontWeight={500}
-                            // color={linkColor}
-
-                            >
-                                {navItem.label}
-                            </Link>
-                        </PopoverTrigger>
+                ))}
 
 
-                    </Popover>
-                </Link>
-            ))}
+
+          
         </Stack>
     );
 };
 
 
-const TopSubNav = ({ label, href, subLabel }) => {
-    return (
-        <Link
-            href={href}
-            role={'group'}
-            display={'block'}
-            p={2}
-            rounded={'md'}
-            _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
-        >
-            <Stack direction={'row'} align={'center'}>
-                <Box>
-                    <Text
-                        transition={'all .3s ease'}
-                        // _groupHover={{ color: 'pink.400' }}
-                        fontWeight={500}>
-                        {label}
-                    </Text>
-                    <Text fontSize={'sm'}>{subLabel}</Text>
-                </Box>
-                <Flex
-                    transition={'all .3s ease'}
-                    transform={'translateX(-10px)'}
-                    opacity={0}
-                    _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-                    justify={'flex-end'}
-                    align={'center'}
-                    flex={1}
-                    width={'100px'}>
-                    {/* <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} /> */}
-                </Flex>
-            </Stack>
-        </Link>
-    );
-}
+// const TopSubNav = ({ label, href, subLabel }) => {
+//     return (
+//         <NavLink
+//             href={href}
+//             role={'group'}
+//             display={'block'}
+//             p={2}
+//             rounded={'md'}
+//             _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+//         >
+//             <Stack direction={'row'} align={'center'}>
+//                 <Box>
+//                     <Text
+//                         transition={'all .3s ease'}
+//                         // _groupHover={{ color: 'pink.400' }}
+//                         fontWeight={500}>
+//                         {label}
+//                     </Text>
+//                     <Text fontSize={'sm'}>{subLabel}</Text>
+//                 </Box>
+//                 <Flex
+//                     transition={'all .3s ease'}
+//                     transform={'translateX(-10px)'}
+//                     opacity={0}
+//                     _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
+//                     justify={'flex-end'}
+//                     align={'center'}
+//                     flex={1}
+//                     width={'100px'}>
+//                     {/* <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} /> */}
+//                 </Flex>
+//             </Stack>
+//         </NavLink>
+//     );
+// }
 
-const BottomSubNav = ({ label, href, subLabel }) => {
-    return (
-        <Link
-            href={href}
-            role={'group'}
-            display={'block'}
-            p={2}
-            rounded={'md'}
-            _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
-        >
-            <Stack direction={'row'} align={'center'}>
-                <Box>
-                    <Text
-                        transition={'all .3s ease'}
-                        _groupHover={{ color: 'pink.400' }}
-                        fontWeight={500}>
-                        {label}
-                    </Text>
-                    <Text fontSize={'sm'}>{subLabel}</Text>
-                </Box>
-                <Flex
-                    transition={'all .3s ease'}
-                    transform={'translateX(-10px)'}
-                    opacity={0}
-                    _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-                    justify={'flex-end'}
-                    align={'center'}
-                    flex={1}>
-                    <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
-                </Flex>
-            </Stack>
-        </Link>
-    );
-}
+// const BottomSubNav = ({ label, href, subLabel }) => {
+//     return (
+//         <NavLink
+//             to={href}
+//             role={'group'}
+//             display={'block'}
+//             p={2}
+//             rounded={'md'}
+//             _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+//         >
+//             <Stack direction={'row'} align={'center'}>
+//                 <Box>
+//                     <Text
+//                         transition={'all .3s ease'}
+//                         _groupHover={{ color: 'pink.400' }}
+//                         fontWeight={500}>
+//                         {label}
+//                     </Text>
+//                     <Text fontSize={'sm'}>{subLabel}</Text>
+//                 </Box>
+//                 <Flex
+//                     transition={'all .3s ease'}
+//                     transform={'translateX(-10px)'}
+//                     opacity={0}
+//                     _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
+//                     justify={'flex-end'}
+//                     align={'center'}
+//                     flex={1}>
+//                     <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+//                 </Flex>
+//             </Stack>
+//         </NavLink>
+//     );
+// }
 
 
 
 const TOP_NAV_ITEMS = [
     {
         label: 'ALL CATEGORIES',
-        href: '/',
+        path: '/',
     },
     {
         label: 'BOYS FASHION',
-        href: '/boysfashion',
+        path: '/boysfashion',
     },
     {
         label: 'GIRL FASHION',
-        href: '/girlsfashion',
+        path: '/girlsfashion',
     },
     {
         label: 'FOOTWEAR',
-        href: '/footwear',
+        path: '/footwear',
     },
     {
         label: 'TOYS',
-        href: '#',
+        path: '#',
     },
     {
         label: 'DIAPERING',
-        href: '#',
+        path: '#',
     },
     {
         label: 'GEAR',
-        href: '#',
+        path: '#',
     },
     {
         label: 'FEEDING',
-        href: '#',
+        path: '#',
     },
     {
         label: 'BATH',
-        href: '#',
+        path: '#',
     },
     {
         label: 'NURSERY',
-        href: '#',
+        path: '#',
     },
     {
         label: 'MOMS',
-        href: '#',
+        path: '#',
     },
     {
         label: 'HEALTH',
-        href: '#',
+        path: '#',
     },
     {
         label: 'BOUTIQUES',
-        href: '#',
+        path: '#',
     },
 ];
 
@@ -413,8 +392,12 @@ const BOTTOM_NAV_ITEMS = [
         href: '#',
     },
     {
-        label: 'Login / Register',
-        href: '#',
+        label: 'Login',
+        href: '/login',
+    },
+    {
+        label: 'Register',
+        href: '/signup',
     },
     {
         label: 'Shorlist',
